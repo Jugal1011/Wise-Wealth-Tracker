@@ -1,0 +1,243 @@
+.custom-table {
+  /* background-image: linear-gradient(to left, rgb(14, 196, 4), #042dfa); Replace with your desired gradient */
+  color: white; /* Set text color to white to ensure readability */
+  box-shadow: 2px 2px 8px 5px rgba(255, 255, 255, 0.6);
+  margin-right: 20vw;
+  margin-left: 20vw;
+  width: 60vw;
+}
+
+/* Custom CSS to define a yellow color for the button */
+.btn-yellow {
+  color: #ffffff; /* Text color */
+  background-color: #ff7207; /* Yellow background color */
+  border-color: #ff7207; /* Border color */
+  margin-bottom: 15px;
+  /* box-shadow: 1px 1px 5px 2px rgba(255, 255, 255, 0.6); */
+}
+
+/* Change the text color on hover (optional) */
+.btn-yellow:hover {
+  background-color: rgb(84, 234, 15);
+}
+
+
+.body-background{
+  /* Set styles for covering the entire screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: aqua;
+  background-image: url("https://img.freepik.com/free-vector/stock-market-economic-graph-with-diagrams-business-financial-concepts-reports-abstract-technology-communication-concept-background_29865-1321.jpg?size=626&ext=jpg");
+  background-size: cover;
+  overflow-y: auto;
+
+    /* Ensure the background covers the entire viewport */
+     /* 100% viewport height */
+    /* Optional: Center the background image */
+    background-position: center;
+}
+
+.custom-form-table{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.custom-table td,
+  .custom-table th {
+    border: 2px solid whitesmoke;
+    
+    text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  font-family: 'Borel', cursive;
+  
+  /* background-image: linear-gradient(to left, rgb(14, 196, 4), #181f9e);*/
+  color: white;
+  background-color: #083868;
+}
+
+.nav-custom{
+  height: 60px;
+  font-family: 'Borel', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  border-bottom: 2px solid whitesmoke;
+  /* background-color: #042ef8; */
+  background-color: #0a3f75; 
+}
+
+.new-font{
+  font-family: 'Borel', cursive;
+  font-weight: bold; 
+  vertical-align: middle;
+  color: white;
+}
+
+.white-color{
+  color:white;
+  font-weight: bold;
+}
+
+.label-height{
+  height: 100px;
+}
+
+.login{
+  border: 5px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  /* width: 70%; */
+  height: 50vh;
+  border-radius: 5px;
+  font-family: 'Borel', cursive;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: white; 
+}
+.signup{
+  border: 5px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  /* width: 80%; */
+  height: 65vh;
+  border-radius: 5px;
+  font-family: 'Borel', cursive;
+  font-weight: bold;
+  box-sizing: border-box;
+  color: white; 
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+}
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+}
+
+.ls-div{
+
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+ align-items: center;
+}
+
+/* body {
+  background-image: linear-gradient(to left, rgb(14, 196, 4), #042dfa);
+} */
+
+.typewriter {
+  font-family: 'Borel', cursive;
+  font-family: 'Tektur', cursive;
+  overflow: hidden;
+  margin-left: 3%;
+  white-space: nowrap;
+  border-right: 12px solid whitesmoke;
+  color: white;
+  font-size: 45px;
+  padding-right: 5px;
+  height: 50px;
+  animation: typewriter 8s steps(40) 1s forwards;
+}
+
+.typewriter span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 372px) {
+  .typewriter {
+    font-size: 27px; /* Decrease font size for small screens */
+    white-space: normal; /* Allow text to wrap to the next line */
+    border-right: none; /* Remove the cursor effect for small screens */
+    height: auto; /* Allow the container to adjust to content height */
+  }
+  .typewriter span {
+    display: block; /* Display each span on a new line for small screens */
+  }
+}
+
+/* Adjust span elements for larger screens */
+@media (min-width: 373px) {
+  .typewriter span {
+    display: inline-block; /* Display span elements as inline-block for larger screens */
+    margin-right: 15px; /* Add right margin to create space at the start of each span */
+  }
+}
+
+
+/* Keyframes for the typewriter animation */
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 97%;
+  }
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Custom CSS */
+.max-width-responsive {
+  max-width: 100%; /* Default maximum width for small screens (up to 372px) */
+
+  @media (min-width: 373px) and (max-width: 768px) {
+    max-width: 75%; /* Maximum width for medium screens (577px - 768px) */
+  }
+
+  @media (min-width: 769px) {
+    max-width: 45%; /* Maximum width for large screens (769px and above) */
+  }
+}
+
+.m-top-res-login {
+ margin-top: 6%; 
+
+  @media (min-width: 373px) and (max-width: 768px) {
+    margin-top: 6%; 
+  }
+
+  @media (min-width: 769px) {
+    margin-top: 4%; 
+  }
+}
+
+.m-top-res-signup {
+ margin-top: 25%; 
+
+  @media (min-width: 373px) and (max-width: 768px) {
+    margin-top: 17%; 
+  }
+
+  @media (min-width: 769px) {
+    margin-top: 8%; 
+  }
+}

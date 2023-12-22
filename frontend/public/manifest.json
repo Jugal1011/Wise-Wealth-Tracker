@@ -1,0 +1,14 @@
+{
+    "name": "Jugal's App",
+    "short_name": "Jugal's App",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "./icons/income.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+}
+  
